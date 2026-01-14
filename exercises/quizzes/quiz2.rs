@@ -53,6 +53,20 @@ mod my_module {
      }
 }
 
+//     pub fn transformer_iter(input: Vec<(String, Command)>) -> Vec<String> {
+//         input
+//             .into_iter()
+//             .map(|(string, command)| match command {
+//                 Command::Uppercase => string.to_uppercase(),
+//                 Command::Trim => string.trim().to_string(),
+//                 Command::Append(n) => string + &"bar".repeat(n),
+//             })
+//             .collect()
+//     }
+// }
+
+
+
 fn main() {
     // You can optionally experiment here.
 }

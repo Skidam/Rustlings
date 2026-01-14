@@ -30,7 +30,7 @@ mod my_module {
                 Command::Uppercase => string.to_uppercase(),
                 Command::Trim => string.trim().to_string(),
                 Command::Append(n) => string + &"bar".repeat(n),
-            };  
+            };
 
             // Push the new string to the output vector.
             output.push(new_string);

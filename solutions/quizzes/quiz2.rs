@@ -30,7 +30,7 @@ mod my_module {
                 Command::Uppercase => string.to_uppercase(),
                 Command::Trim => string.trim().to_string(),
                 Command::Append(n) => string + &"bar".repeat(n),
-            };
+            };  
 
             // Push the new string to the output vector.
             output.push(new_string);
@@ -41,17 +41,17 @@ mod my_module {
 
     // Equivalent to `transform` but uses an iterator instead of a loop for
     // comparison. Don't worry, we will practice iterators later ;)
-    pub fn transformer_iter(input: Vec<(String, Command)>) -> Vec<String> {
-        input
-            .into_iter()
-            .map(|(string, command)| match command {
-                Command::Uppercase => string.to_uppercase(),
-                Command::Trim => string.trim().to_string(),
-                Command::Append(n) => string + &"bar".repeat(n),
-            })
-            .collect()
-    }
-}
+//     pub fn transformer_iter(input: Vec<(String, Command)>) -> Vec<String> {
+//         input
+//             .into_iter()
+//             .map(|(string, command)| match command {
+//                 Command::Uppercase => string.to_uppercase(),
+//                 Command::Trim => string.trim().to_string(),
+//                 Command::Append(n) => string + &"bar".repeat(n),
+//             })
+//             .collect()
+//     }
+// }
 
 fn main() {
     // You can optionally experiment here.
